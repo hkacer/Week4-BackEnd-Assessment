@@ -63,7 +63,7 @@ const addNewCars=(event)=>{
     }
 
     axios.post(`${baseURL}/api/addCars`,bodyObj)
-    .then((res)=>{
+    .then((res)=>{                                           
         console.log(res.data)
         const cars=res.data
         carsRack.innerHTML=''
